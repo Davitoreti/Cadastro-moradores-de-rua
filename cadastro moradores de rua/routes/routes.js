@@ -9,5 +9,6 @@ let MainController =  require('../controllers/MainController');
 router.get('/login', MainController.login);
 router.get('/registrar', MainController.registrar);
 router.get('/home', auth, MainController.home);
+router.get('/auth', MainController.auth)
 
 module.exports = router;
